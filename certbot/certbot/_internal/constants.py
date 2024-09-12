@@ -83,8 +83,8 @@ CLI_DEFAULTS: Dict[str, Any] = dict(  # pylint: disable=use-dict-literal
     new_key=False,
     disable_renew_updates=False,
     random_sleep_on_renew=True,
-    eab_hmac_key=None,
-    eab_kid=None,
+    eab_hmac_key=os.environ.get('CERTBOT_EAB_HMAC_KEY'),
+    eab_kid=os.environ.get('CERTBOT_EAB_KID'),
     issuance_timeout=90,
     run_deploy_hooks=False,
 

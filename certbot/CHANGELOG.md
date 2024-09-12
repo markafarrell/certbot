@@ -2,6 +2,11 @@
 
 Certbot adheres to [Semantic Versioning](https://semver.org/).
 
+## Unreleased
+
+* Ability to configure `eab-kid` and `eab-hmac-key` using environment
+  variables (`CERTBOT_EAB_KID` and `CERTBOT_EAB_HMAC_KEY`)
+
 ## 3.0.0 - master
 
 ### Added

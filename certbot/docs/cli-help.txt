@@ -1,4 +1,4 @@
-usage: 
+usage:
   certbot [SUBCOMMAND] [options] [-d DOMAIN] [-d DOMAIN] ...
 
 Certbot can obtain and install HTTPS/TLS/SSL certificates.  By default,
@@ -69,9 +69,12 @@ options:
                         case of a name conflict, a number like -0001 will be
                         appended to the certificate name. (default: Ask)
   --eab-kid EAB_KID     Key Identifier for External Account Binding (default:
-                        None)
+                        CERTBOT_EAB_KID environment variable if set or None if
+                        not set).
   --eab-hmac-key EAB_HMAC_KEY
-                        HMAC key for External Account Binding (default: None)
+                        HMAC key for External Account Binding (default:
+                        CERTBOT_EAB_HMAC_KEY environment variable if set or
+                        None if not set).
   --cert-name CERTNAME  Certificate name to apply. This name is used by
                         Certbot for housekeeping and in file paths; it doesn't
                         affect the content of the certificate itself.
